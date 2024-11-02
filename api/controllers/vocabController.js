@@ -17,7 +17,7 @@ exports.create_a_word = (req, res) =>{
 };
 
 exports.read_a_word = (req, res) => {
-    Vocab.findById(req.params.wordId, (err, res) => {
+    Vocab.findById(req.params.wordId, (err, word) => {
         if(err) res.send(err);
         res.json(word);
     });
