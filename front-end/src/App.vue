@@ -48,7 +48,7 @@ input {
   width: 300px;
 }
 div.label {
-  width: 120px;
+  width: 140px;
 }
 div.input {
   margin-bottom: 10px;

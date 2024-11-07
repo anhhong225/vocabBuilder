@@ -1,6 +1,6 @@
 <template>
   <form action="#" @submit.prevent="onSubmit">
-     <p v-if="errorsPresent" class="error">Please fill out both fields!</p>
+     <p v-if="errorsPresent" class="error">Please fill out all fields!</p>
 
      <div class="ui labeled input fluid">
        <div class="ui label">
@@ -14,6 +14,13 @@
          <i class="germany flag"></i> German
        </div>
        <input type="text" placeholder="Enter word..." v-model="word.german" />
+     </div>
+
+     <div class="ui labeled input fluid">
+       <div class="ui label">
+         <i class="vietnam flag"></i> Vietnamese
+       </div>
+       <input type="text" placeholder="Enter word..." v-model="word.vietnamese" />
      </div>
 
      <div class="ui labeled input fluid">
@@ -38,7 +45,8 @@
         return {
           english: '',
           german: '',
-          france: '',
+          vietnamese: '',
+          france: ''
         };
        }
      }
@@ -50,7 +58,7 @@
    },
    methods: {
      onSubmit: function() {
-       if (this.word.englidh === '' || this.word.german === '' || this.word.france === ''){
+       if (this.word.englidh === '' || this.word.german === '' || this.word.france === '' || this.word.vietnamese === ''){
         this.errorsPresent = true;
        }else {
         this.$emit('createOrUpdate', this.word);
