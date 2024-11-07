@@ -16,10 +16,6 @@ const VocabSchema = new Schema(// 2 attributes: english and german
         vietnamese: {
             type: String,
             required: 'Vietnamese word cannot be blank'
-        },
-        france: {
-            type: String,
-            required: 'France word cannot be blank'
         }
     },
     {collection: 'vocab'}// specifying a name for collection

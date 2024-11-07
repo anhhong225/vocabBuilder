@@ -7,7 +7,6 @@
                     <th>English</th>
                     <th>German</th>
                     <th>Vietnamese</th>
-                    <th>France</th>
                     <th colspan="3"></th>
                 </tr>
             </thead>
@@ -15,7 +14,6 @@
                 <td>{{ word.english }}</td>
                 <td>{{ word.german }}</td>
                 <td>{{ word.vietnamese }}</td>
-                <td>{{ word.france }}</td>
                 <td width="75" class="center aligned">
                     <router-link :to="{name: 'show', params: {id: word._id}}">Show</router-link></td>
                 <td width="75" class="center aligned">
