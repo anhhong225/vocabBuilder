@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 //Format for model 'VocabSchema'
 //creating an instance of the Schema class
-const VocabSchema = new Schema(// 2 attributes: english and german
+const VocabSchema = new Schema(// 3 attributes: english and german
     {
         english: {
             type: String,
