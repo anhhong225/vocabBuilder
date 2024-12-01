@@ -58,7 +58,7 @@ export default {
   },
   methods: {
     onSubmit: function() {
-      if (this.english === this.currWord.english && this.vietnamese === this.currWord.vietnamese) {
+      if (this.english.toLowerCase() === this.currWord.english.toLowerCase() && this.vietnamese.toLowerCase() === this.currWord.vietnamese.toLowerCase()) {
         this.flash('Correct!', 'success', { timeout: 1000 });
         this.score += 1;
       } else {

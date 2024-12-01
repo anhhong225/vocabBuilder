@@ -43,7 +43,7 @@ export default {
 .myFlash {
   width: 250px;
   margin: 10px;
-  position: absolute;
+  position: absolute; /* Positions the flash message relative to the viewport */
   top: 50;
   right: 0;
 }

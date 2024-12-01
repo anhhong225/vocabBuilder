@@ -44,7 +44,7 @@
    },
    data() {
      return {
-       errorsPresent: false //for tracking ì validation errors
+       errorsPresent: false //for tracking is validation errors
      };
    },
    methods: {
